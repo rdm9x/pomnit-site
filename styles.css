@@ -106,7 +106,7 @@ h1 em { color: var(--sage-dark); font-family: Georgia, "Times New Roman", serif;
 .note-one { top: 20%; left: -2%; }
 .note-two { right: -2%; bottom: 16%; }
 .note-dot { width: 9px; height: 9px; flex: 0 0 auto; border-radius: 50%; background: #91a28c; box-shadow: 0 0 0 6px rgba(145,162,140,.14); }
-.wave-mini { width: 26px; height: 18px; background: url("assets/pomnit-icon.png") center/contain no-repeat; }
+.wave-mini { width: 26px; height: 18px; background: url("assets/pomnit-icon-transparent.png") center/contain no-repeat; }
 
 .section-pad { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 120px 24px; }
 .section-heading { display: grid; grid-template-columns: .7fr 1.3fr; gap: 34px; align-items: start; margin-bottom: 56px; }
@@ -167,6 +167,18 @@ blockquote { margin: 0; font-size: 32px; line-height: 1.15; letter-spacing: -.04
 .swatch.metal { background: linear-gradient(125deg, #fafafa, #9c9e9d 50%, #e8e8e7); }
 .prototype-note { margin-top: 22px; padding-left: 16px; border-left: 2px solid var(--sage); color: var(--muted); font-size: 12px; }
 
+.product-world { width: min(1320px, calc(100% - 40px)); padding-top: 150px; }
+.section-intro { max-width: 680px; margin: 24px 0 0; color: var(--muted); font-size: 18px; }
+.product-gallery { display: grid; grid-template-columns: 1.02fr 1.18fr; grid-template-rows: 1fr 1fr; gap: 16px; }
+.gallery-card { position: relative; min-height: 310px; margin: 0; overflow: hidden; border-radius: 32px; background: #e8e6e1; box-shadow: 0 18px 50px rgba(41,43,36,.08); }
+.gallery-card.gallery-worn { grid-row: 1 / 3; min-height: 650px; }
+.gallery-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.gallery-card:hover img { transform: scale(1.025); }
+.gallery-card figcaption { position: absolute; left: 18px; right: 18px; bottom: 18px; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 15px; border: 1px solid rgba(255,255,255,.7); border-radius: 18px; background: rgba(245,244,240,.68); box-shadow: inset 0 1px rgba(255,255,255,.84); backdrop-filter: blur(20px) saturate(120%); -webkit-backdrop-filter: blur(20px) saturate(120%); }
+.gallery-card figcaption strong { font-size: 12px; }
+.gallery-card figcaption span { color: var(--muted); font-size: 11px; text-align: right; }
+.concept-caption { max-width: 780px; margin: 20px auto 0; color: var(--muted); font-size: 12px; text-align: center; }
+
 .personal { padding-top: 150px; }
 .personal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .personal-card { min-height: 250px; padding: 28px; border: 1px solid rgba(255,255,255,.76); border-radius: 28px; background: rgba(255,255,255,.5); }
@@ -211,12 +223,15 @@ footer p:nth-child(2) { flex: 1; }
   .day-track { grid-template-columns: 1fr 1fr; }
   .day-card:nth-child(2), .day-card:nth-child(4) { transform: none; }
   .audience, .app-showcase, .pendant, .status-card { grid-template-columns: 1fr; }
+  .product-gallery { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .gallery-card.gallery-worn { grid-row: auto; min-height: 680px; }
+  .gallery-card:not(.gallery-worn) { min-height: 420px; }
   .flow { grid-template-columns: 1fr 1fr; }
   .flow-arrow { display: none; }
   .app-showcase { gap: 40px; }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 880px) {
   .site-header { top: 10px; width: calc(100% - 20px); padding-left: 16px; }
   .menu-toggle { display: block; }
   .site-nav { position: absolute; top: calc(100% + 8px); left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; padding: 12px; border: 1px solid rgba(255,255,255,.78); border-radius: 20px; background: rgba(245,245,241,.94); box-shadow: var(--shadow); backdrop-filter: blur(24px); }
@@ -233,7 +248,7 @@ footer p:nth-child(2) { flex: 1; }
   .floating-note { padding: 10px 12px; }
   .note-one { left: 0; top: 18%; }
   .note-two { right: 0; bottom: 8%; }
-  .section-pad, .day, .app-showcase, .pendant, .status { width: 100%; padding: 88px 20px; }
+  .section-pad, .day, .app-showcase, .pendant, .product-world, .status { width: 100%; padding: 88px 20px; }
   .section-heading { grid-template-columns: 1fr; gap: 8px; margin-bottom: 36px; }
   h2 { font-size: clamp(36px, 11vw, 50px); }
   .manifesto-grid { margin-top: 42px; }
@@ -248,6 +263,10 @@ footer p:nth-child(2) { flex: 1; }
   .pendant { gap: 42px; }
   .pendant-visual { border-radius: 30px; }
   .material-row { grid-template-columns: 1fr; }
+  .product-gallery { gap: 12px; }
+  .gallery-card, .gallery-card.gallery-worn, .gallery-card:not(.gallery-worn) { min-height: 0; aspect-ratio: 4 / 3; border-radius: 26px; }
+  .gallery-card.gallery-worn { aspect-ratio: 4 / 5; }
+  .gallery-card figcaption { left: 12px; right: 12px; bottom: 12px; }
   .status-card { gap: 38px; padding: 34px 26px; border-radius: 30px; }
   .final-cta { padding-block: 110px; }
   footer { width: calc(100% - 40px); padding-inline: 0; flex-wrap: wrap; gap: 12px 18px; }
