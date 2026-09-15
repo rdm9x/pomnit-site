@@ -122,6 +122,16 @@
             </ul>
           </div>
         </div>
+        <div class="world-screens work-screens" aria-label="Примеры рабочих экранов приложения">
+          <figure class="screen-proof">
+            <img src="assets/app-feed.webp" loading="lazy" decoding="async" alt="Лента Помнит со структурированным итогом двух рабочих разговоров">
+            <figcaption><strong>После встречи</strong><span>суть и решения уже разложены по блокам</span></figcaption>
+          </figure>
+          <figure class="screen-proof">
+            <img src="assets/app-action-detail.webp" loading="lazy" decoding="async" alt="Экран дела с описанием, сроком, источником и советом Помнит">
+            <figcaption><strong>Перед действием</strong><span>срок, исходный разговор и следующий шаг</span></figcaption>
+          </figure>
+        </div>
         <p class="world-boundary"><strong>Принцип внедрения:</strong> компания получает только рабочую информацию, которую ей разрешили видеть. Личная часть памяти сотрудника остаётся личной.</p>
       </article>
 
@@ -147,6 +157,16 @@
             <p>Страницы летописи можно слушать как главы книги — голосом рассказчика, которого выберет владелец.</p>
           </div>
         </div>
+        <div class="world-screens life-screens" aria-label="Примеры экранов личной летописи">
+          <figure class="screen-proof">
+            <img src="assets/app-chronicle-calendar.webp" loading="lazy" decoding="async" alt="Календарь летописи Помнит с отмеченными днями и выбранным 15 сентября">
+            <figcaption><strong>Любой день рядом</strong><span>выберите дату в календаре</span></figcaption>
+          </figure>
+          <figure class="screen-proof">
+            <img src="assets/app-chronicle-story.webp" loading="lazy" decoding="async" alt="Летопись выбранного дня как оформленный рассказ о жизни">
+            <figcaption><strong>День становится главой</strong><span>события, главное и живая фраза</span></figcaption>
+          </figure>
+        </div>
         <p class="life-note">Стиль тоже выбираете вы: короткий дневник, строгие мемуары, ироничная проза или собственная манера рассказа.</p>
       </article>
     </section>
@@ -159,27 +179,35 @@
       <div class="day-track">
         <article class="day-card reveal">
           <div class="time">08:30</div>
-          <div class="day-icon" aria-hidden="true">☼</div>
           <h3>Утром</h3>
           <p>Показывает, что нужно сделать сегодня и кому пора напомнить об обещании.</p>
+          <figure class="day-shot">
+            <img src="assets/app-tasks.webp" loading="lazy" decoding="async" alt="Экран дел Помнит с напоминаниями на сегодня">
+          </figure>
         </article>
         <article class="day-card reveal" data-delay="1">
           <div class="time">13:15</div>
-          <div class="day-icon" aria-hidden="true">◉</div>
           <h3>После встречи</h3>
           <p>Даёт короткий итог: решения, суммы, сроки и следующие шаги.</p>
+          <figure class="day-shot">
+            <img src="assets/app-feed.webp" loading="lazy" decoding="async" alt="Лента Помнит с готовым итогом встречи">
+          </figure>
         </article>
         <article class="day-card reveal" data-delay="2">
           <div class="time">17:40</div>
-          <div class="day-icon" aria-hidden="true">↗</div>
           <h3>Перед звонком</h3>
           <p>Напоминает, о чём вы говорили раньше и какие вопросы остались открытыми.</p>
+          <figure class="day-shot">
+            <img src="assets/app-action-detail.webp" loading="lazy" decoding="async" alt="Подробное дело с контекстом прошлого разговора и советом Помнит">
+          </figure>
         </article>
         <article class="day-card reveal" data-delay="3">
           <div class="time">22:10</div>
-          <div class="day-icon" aria-hidden="true">◐</div>
           <h3>Вечером</h3>
           <p>Собирает прожитый день в короткую историю, которую приятно сохранить и перечитать.</p>
+          <figure class="day-shot">
+            <img src="assets/app-chronicle-story.webp" loading="lazy" decoding="async" alt="Вечерняя летопись дня в приложении Помнит">
+          </figure>
         </article>
       </div>
     </section>
@@ -241,9 +269,12 @@
           <li><span>Летопись</span><p>Дни вашей жизни как история, которую можно читать и слушать.</p></li>
         </ul>
       </div>
-      <figure class="ui-frame reveal" data-delay="1">
-        <img src="assets/pomnit-ui.webp" alt="Светлый интерфейс приложения Помнит с полупрозрачной навигацией">
-      </figure>
+      <div class="app-screen-wall reveal" data-delay="1" aria-label="Четыре основных экрана приложения Помнит">
+        <figure><img src="assets/app-feed.webp" loading="lazy" decoding="async" alt="Лента с итогами разговоров"><figcaption>Лента</figcaption></figure>
+        <figure><img src="assets/app-tasks.webp" loading="lazy" decoding="async" alt="Список дел и напоминаний"><figcaption>Дела</figcaption></figure>
+        <figure><img src="assets/app-chat-context.webp" loading="lazy" decoding="async" alt="Чат с ответом по контексту прошлого разговора"><figcaption>Чат</figcaption></figure>
+        <figure><img src="assets/app-chronicle-calendar.webp" loading="lazy" decoding="async" alt="Календарь личной летописи"><figcaption>Летопись</figcaption></figure>
+      </div>
     </section>
 
     <section class="pendant section-pad" id="pendant">
