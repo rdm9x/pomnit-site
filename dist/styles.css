@@ -31,6 +31,7 @@ body {
 img { display: block; max-width: 100%; }
 a { color: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
+#work, #life, #how, #pendant, #day { scroll-margin-top: 112px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .skip-link { position: fixed; left: 16px; top: -80px; z-index: 100; padding: 10px 16px; background: var(--ink); color: white; border-radius: 12px; transition: top .2s; }
 .skip-link:focus { top: 16px; }
@@ -119,6 +120,33 @@ h3 { margin: 0; font-size: 21px; line-height: 1.2; letter-spacing: -.025em; }
 .manifesto-grid article { min-height: 290px; padding: 28px; border-top: 1px solid var(--line); }
 .number { display: block; margin-bottom: 74px; color: var(--sage-dark); font-size: 12px; font-weight: 700; }
 .manifesto-grid p, .day-card p, .flow-step p, .personal-card p { color: var(--muted); }
+
+.worlds { width: min(1320px, calc(100% - 40px)); padding-top: 150px; }
+.world-card { position: relative; overflow: hidden; margin-top: 18px; padding: 58px; border-radius: 42px; box-shadow: var(--shadow); }
+.world-card::after { content: ""; position: absolute; width: 420px; height: 420px; right: -120px; top: -170px; border-radius: 50%; pointer-events: none; }
+.world-work { color: #f7f7f3; background: linear-gradient(145deg, #343832, #20231f); }
+.world-work::after { background: radial-gradient(circle, rgba(171,188,166,.25), transparent 68%); }
+.world-life { color: var(--ink); background: linear-gradient(145deg, rgba(255,255,255,.76), rgba(228,225,232,.66)); border: 1px solid rgba(255,255,255,.82); }
+.world-life::after { background: radial-gradient(circle, rgba(184,176,195,.28), transparent 68%); }
+.world-title { position: relative; z-index: 2; display: grid; grid-template-columns: .45fr 1.55fr; gap: 34px; align-items: start; }
+.world-title h2 { max-width: 900px; font-size: clamp(36px, 4.3vw, 62px); }
+.world-label { width: fit-content; padding: 9px 13px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.world-life .world-label { color: var(--sage-dark); border-color: rgba(86,102,82,.14); background: rgba(255,255,255,.5); }
+.world-columns { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 58px; }
+.world-column, .life-item { padding: 30px; border-radius: 28px; }
+.world-column { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.09); }
+.world-number { display: block; margin-bottom: 44px; color: #aebba9; font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+.world-column h3, .life-item h3 { margin-bottom: 18px; font-size: 25px; }
+.world-column ul { padding: 0; margin: 0; list-style: none; color: rgba(255,255,255,.68); }
+.world-column li { position: relative; padding: 9px 0 9px 20px; }
+.world-column li::before { content: ""; position: absolute; left: 0; top: 19px; width: 5px; height: 5px; border-radius: 50%; background: #aebba9; }
+.world-boundary { position: relative; z-index: 2; margin: 18px 0 0; padding: 18px 22px; border-radius: 20px; color: rgba(255,255,255,.66); background: rgba(255,255,255,.06); font-size: 14px; }
+.world-boundary strong { color: #fff; }
+.life-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 58px; }
+.life-item { background: rgba(255,255,255,.55); border: 1px solid rgba(255,255,255,.76); }
+.life-item .world-number { color: #746b7b; }
+.life-item p { margin: 0; color: var(--muted); }
+.life-note { position: relative; z-index: 2; max-width: 850px; margin: 24px 0 0; color: var(--muted); font-size: 15px; }
 
 .day { width: min(1340px, calc(100% - 24px)); padding-inline: 36px; }
 .day-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
@@ -212,6 +240,8 @@ footer p:nth-child(2) { flex: 1; }
   .hero-actions, .hero-proof { justify-content: center; }
   .hero-visual { min-height: 590px; }
   .manifesto-grid { grid-template-columns: 1fr; }
+  .world-title { grid-template-columns: 1fr; gap: 16px; }
+  .life-grid { grid-template-columns: 1fr; }
   .manifesto-grid article { min-height: auto; display: grid; grid-template-columns: 70px 1fr; gap: 10px; }
   .manifesto-grid .number { grid-row: 1 / 3; margin: 0; }
   .manifesto-grid p { margin: 8px 0 0; }
@@ -243,11 +273,16 @@ footer p:nth-child(2) { flex: 1; }
   .floating-note { padding: 10px 12px; }
   .note-one { left: 0; top: 18%; }
   .note-two { right: 0; bottom: 8%; }
-  .section-pad, .day, .app-showcase, .pendant, .product-world, .trust { width: 100%; padding: 88px 20px; }
+  .section-pad, .day, .app-showcase, .pendant, .product-world, .worlds, .trust { width: 100%; padding: 88px 20px; }
   .section-heading { grid-template-columns: 1fr; gap: 8px; margin-bottom: 36px; }
   h2 { font-size: clamp(36px, 11vw, 50px); }
   .manifesto-grid { margin-top: 42px; }
   .manifesto-grid article { grid-template-columns: 46px 1fr; padding: 22px 8px; }
+  .world-card { margin-top: 12px; padding: 34px 24px; border-radius: 30px; }
+  .world-title h2 { font-size: clamp(34px, 10vw, 48px); }
+  .world-columns { grid-template-columns: 1fr; margin-top: 34px; }
+  .world-column, .life-item { padding: 24px; }
+  .life-grid { margin-top: 34px; }
   .day-track, .personal-grid, .flow { grid-template-columns: 1fr; }
   .day-card { min-height: 300px; }
   .audience { gap: 36px; }
