@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f3ef">
-  <meta name="description" content="Помнит превращает рабочие разговоры в итоги и дела, а личные события — в летопись и аудиокнигу жизни.">
-  <title>Помнит — голосовой помощник, который помнит ваши разговоры</title>
+  <meta name="description" content="Помнит помогает сохранить главное из разговоров: рабочие решения, обещания и личную историю.">
+  <title>Помнит — помнит вашу жизнь и напоминает главное</title>
   <link rel="icon" type="image/png" href="assets/pomnit-icon-transparent.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260916-33">
 </head>
 <body>
   <a class="skip-link" href="#main">К содержанию</a>
@@ -21,11 +21,10 @@
       <span class="sr-only">Открыть меню</span>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="Основная навигация" data-menu>
-      <a href="#work">Для работы</a>
-      <a href="#life">Для жизни</a>
-      <a href="#how">Как работает</a>
+      <a href="#work">Работа и жизнь</a>
+      <a href="#app-demo">Приложение</a>
       <a href="#pendant">Кулон</a>
-      <a class="nav-cta" href="#day">Посмотреть пример</a>
+      <a class="nav-cta" href="#app-demo">Смотреть демо</a>
     </nav>
   </header>
 
@@ -34,12 +33,12 @@
       <div class="ambient ambient-one" aria-hidden="true"></div>
       <div class="ambient ambient-two" aria-hidden="true"></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> Голосовой помощник и личная память</p>
-        <h1><em>Помнит</em> ваши разговоры.<br>Напоминает главное.</h1>
-        <p class="hero-lead">Записывает разговоры с телефона или кулона. Для работы — делает итоги, собирает дела и напоминает о сроках. Для жизни — сохраняет личную летопись, которую можно читать и слушать.</p>
+        <p class="eyebrow"><span></span> Ваша вторая память</p>
+        <h1><em>Помнит</em> вашу жизнь.<br>Напоминает главное.</h1>
+        <p class="hero-lead">Приложение и кулон, которые превращают разговоры в понятные дела, а прожитые дни — в личную историю.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#day">Посмотреть пример</a>
-          <a class="button button-secondary" href="#how">Как это работает <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary" href="#app-demo">Посмотреть приложение</a>
+          <a class="button button-secondary" href="#pendant">Выбрать кулон <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-proof" aria-label="Ключевые возможности">
           <span>Встречи и дела</span>
@@ -49,37 +48,52 @@
       </div>
 
       <div class="hero-visual reveal" data-delay="1">
-        <div class="halo" aria-hidden="true"></div>
-        <figure class="product-stage">
-          <img src="assets/pomnit-product.webp" alt="Кулон Помнит из тёмного дерева и матового алюминия в трёх ракурсах">
+        <figure class="product-stage product-stage-fan">
+          <img src="assets/pomnit-hero-single-warm-v1.png" fetchpriority="high" decoding="async" alt="Кулон Помнит с крышкой из тёплого дерева на светло-голубом фоне">
         </figure>
-        <div class="floating-note note-one">
-          <span class="note-dot"></span>
-          <div><strong>Напомнить в пятницу</strong><small>Вы обещали отправить смету</small></div>
-        </div>
-        <div class="floating-note note-two">
-          <span class="wave-mini" aria-hidden="true"></span>
-          <div><strong>Итог встречи готов</strong><small>3 решения · 2 дела · 1 срок</small></div>
+      </div>
+    </section>
+
+    <section class="form-factor section-pad" id="compact" aria-labelledby="compact-title">
+      <figure class="form-factor-visual reveal">
+        <img src="assets/pomnit-in-hand-v1.webp" alt="Кулон Помнит из дерева и алюминия лежит на ладони — наглядный масштаб" loading="lazy" decoding="async">
+      </figure>
+      <div class="form-factor-copy reveal" data-delay="1">
+        <p class="section-kicker">Кулон в жизни</p>
+        <h2 id="compact-title">Умещается в ладони.<br>Остаётся с вами.</h2>
+        <p class="form-factor-lead">Небольшой корпус из дерева и алюминия помещается в ладони и спокойно носится на шнурке.</p>
+        <div class="form-factor-facts">
+          <div><span>От аккумулятора</span><strong>до 18 часов</strong><p>работы без подзарядки</p></div>
+          <div><span>Во внутренней памяти</span><strong>8 часов</strong><p>записи без выгрузки на телефон</p></div>
         </div>
       </div>
     </section>
 
-    <section class="manifesto section-pad reveal" id="benefit">
+    <section class="manifesto section-pad reveal" id="benefit" hidden>
       <p class="section-kicker">Что вы получаете</p>
       <h2>Не нужно переслушивать записи<br>и вспоминать, кто что обещал.</h2>
       <div class="manifesto-grid">
         <article>
-          <span class="number">01</span>
+          <div class="benefit-scene scene-summary" aria-label="Пример итога встречи">
+            <div class="benefit-example"><span class="example-label">Итог встречи <span aria-hidden="true">↗</span></span><strong>Решили</strong><p>Собрать первую партию<br>к пятнице.</p><span class="example-chip">Решение сохранено</span></div>
+          </div>
+          <span class="number">01 / Встречи</span>
           <h3>Готовый итог встречи</h3>
           <p>Коротко: что обсудили, что решили, какие суммы и сроки назвали.</p>
         </article>
         <article>
-          <span class="number">02</span>
+          <div class="benefit-scene scene-promise" aria-label="Пример дела со сроком">
+            <div class="benefit-example"><span class="example-label">Сегодня <span aria-hidden="true">↗</span></span><div class="example-task"><span class="example-check" aria-hidden="true"></span><strong>Отправить смету</strong></div><span class="example-time">до 14:00</span><span class="example-chip">Из вашего разговора</span></div>
+          </div>
+          <span class="number">02 / Обещания</span>
           <h3>Обещания не теряются</h3>
-          <p>Помнит, что обещали вы и что обещали вам. Показывает это как понятные дела.</p>
+          <p><span class="product-name">Помнит</span> сохраняет ваши обещания и обещания других. Показывает это как понятные дела.</p>
         </article>
         <article>
-          <span class="number">03</span>
+          <div class="benefit-scene scene-memory" aria-label="Пример сохранённой фразы">
+            <div class="benefit-example"><span class="example-label">Живая фраза <span aria-hidden="true">“</span></span><blockquote>«Теперь это хочется<br>не прятать, а носить».</blockquote><span class="example-chip">В истории этого дня</span></div>
+          </div>
+          <span class="number">03 / Воспоминания</span>
           <h3>Важное остаётся с вами</h3>
           <p>Рабочие договорённости становятся делами, а личные разговоры — историей жизни.</p>
         </article>
@@ -91,14 +105,14 @@
         <p class="section-kicker">Два пространства</p>
         <div>
           <h2 id="worlds-title">Для работы.<br>И для жизни.</h2>
-          <p class="section-intro">Помнит по-разному обращается с деловой и личной частью дня. Рабочий разговор превращается в результат. Личный — в историю, которую можно читать и слушать.</p>
+          <p class="section-intro">На работе — решения, обещания и сроки. В личной жизни — люди, события и слова, к которым хочется вернуться.</p>
         </div>
       </div>
 
       <article class="world-card world-work reveal" id="work">
         <div class="world-title">
           <span class="world-label">Для работы</span>
-          <h2>Помнит договорённости<br>и помогает довести их до результата.</h2>
+          <h2><span class="product-name">Помнит</span> сохраняет договорённости<br>и помогает довести их до результата.</h2>
         </div>
         <div class="world-columns">
           <div class="world-column">
@@ -122,14 +136,14 @@
             </ul>
           </div>
         </div>
-        <div class="world-screens work-screens" aria-label="Примеры рабочих карточек приложения">
+        <div class="world-screens work-screens" aria-label="Примеры рабочих итогов и ответов">
           <figure class="screen-proof">
-            <img src="assets/ui-feed-summary.webp" loading="lazy" decoding="async" alt="Карточка Помнит со структурированным итогом рабочей встречи">
-            <figcaption><strong>После встречи</strong><span>суть и решения уже разложены по блокам</span></figcaption>
+            <div class="demo-panel demo-summary"><div class="demo-heading"><span class="demo-symbol symbol-summary" aria-hidden="true"></span><span>Итог встречи</span><span class="demo-example-tag">Пример</span></div><div class="demo-body"><span class="demo-overline">13:15 · Встреча с клиентом</span><h4>Новый проект</h4><div class="demo-summary-item"><span>Обсудили</span><p>Задачи первого этапа, бюджет и сроки.</p></div><div class="demo-summary-item"><span>Решили</span><p>Отправить смету до пятницы. Клиент уточнит объём заказа к четвергу.</p></div></div><div class="demo-footer"><span class="demo-pill">2 договорённости</span><span class="demo-pill">Сроки сохранены</span></div></div>
+            <figcaption><strong>После встречи</strong><span>суть разговора и принятые решения</span></figcaption>
           </figure>
           <figure class="screen-proof">
-            <img src="assets/ui-next-step.webp" loading="lazy" decoding="async" alt="Карточка Помнит со следующим шагом и объяснением по контексту">
-            <figcaption><strong>Перед действием</strong><span>срок, исходный разговор и следующий шаг</span></figcaption>
+            <div class="demo-panel demo-chat"><div class="demo-heading"><span class="demo-symbol symbol-chat" aria-hidden="true"></span><span>Ответ по вашей памяти</span><span class="demo-example-tag">Пример</span></div><div class="demo-body demo-conversation"><div class="demo-message demo-question"><span class="demo-speaker">Вы</span><p>Что я обещал Анне по заказу?</p></div><div class="demo-message demo-answer"><span class="demo-speaker product-name">Помнит</span><p>Вы обещали отправить обновлённую смету <strong>до пятницы.</strong> Анна со своей стороны уточнит тираж к четвергу.</p></div></div><div class="demo-footer"><span class="demo-source"><i aria-hidden="true"></i>Из прошлого разговора</span></div></div>
+            <figcaption><strong>Перед разговором</strong><span>прошлые обещания и ближайший срок</span></figcaption>
           </figure>
         </div>
         <p class="world-boundary"><strong>Принцип внедрения:</strong> компания получает только рабочую информацию, которую ей разрешили видеть. Личная часть памяти сотрудника остаётся личной.</p>
@@ -149,7 +163,7 @@
           <div class="life-item">
             <span class="world-number">02</span>
             <h3>История людей</h3>
-            <p>Помнит, кто эти люди, что вас связывает и как менялись ваши отношения со временем.</p>
+            <p><span class="product-name">Помнит</span> сохраняет историю людей: что вас связывает и как менялись ваши отношения со временем.</p>
           </div>
           <div class="life-item">
             <span class="world-number">03</span>
@@ -157,62 +171,62 @@
             <p>Страницы летописи можно слушать как главы книги — голосом рассказчика, которого выберет владелец.</p>
           </div>
         </div>
-        <div class="world-screens life-screens" aria-label="Примеры карточек личной летописи">
+        <div class="world-screens life-screens" aria-label="Примеры личной летописи">
           <figure class="screen-proof">
-            <img src="assets/ui-calendar.webp" loading="lazy" decoding="async" alt="Календарь летописи Помнит с отмеченными днями и выбранным 15 сентября">
-            <figcaption><strong>Любой день рядом</strong><span>выберите дату в календаре</span></figcaption>
+            <div class="demo-panel demo-calendar"><div class="demo-heading"><span class="demo-symbol symbol-calendar" aria-hidden="true"></span><span>Вернуться к дате</span><span class="demo-example-tag">Пример</span></div><div class="demo-body"><h4>Сентябрь 2026</h4><div class="demo-calendar-grid" aria-label="Сентябрь 2026, выбран день 15 сентября"><span class="calendar-weekday">Пн</span><span class="calendar-weekday">Вт</span><span class="calendar-weekday">Ср</span><span class="calendar-weekday">Чт</span><span class="calendar-weekday">Пт</span><span class="calendar-weekday">Сб</span><span class="calendar-weekday">Вс</span><span class="calendar-date"></span><span class="calendar-date">1</span><span class="calendar-date">2</span><span class="calendar-date">3</span><span class="calendar-date">4</span><span class="calendar-date">5</span><span class="calendar-date">6</span><span class="calendar-date">7</span><span class="calendar-date">8</span><span class="calendar-date marked">9</span><span class="calendar-date">10</span><span class="calendar-date">11</span><span class="calendar-date marked">12</span><span class="calendar-date">13</span><span class="calendar-date marked">14</span><span class="calendar-date selected">15</span><span class="calendar-date">16</span><span class="calendar-date">17</span><span class="calendar-date">18</span><span class="calendar-date">19</span><span class="calendar-date">20</span><span class="calendar-date">21</span><span class="calendar-date">22</span><span class="calendar-date">23</span><span class="calendar-date">24</span><span class="calendar-date">25</span><span class="calendar-date">26</span><span class="calendar-date">27</span><span class="calendar-date">28</span><span class="calendar-date">29</span><span class="calendar-date">30</span><span class="calendar-date"></span><span class="calendar-date"></span><span class="calendar-date"></span><span class="calendar-date"></span></div></div><div class="demo-footer calendar-footer"><strong>15 сентября</strong><span>День сохранён в летописи</span></div></div>
+            <figcaption><strong>Вернуться к дате</strong><span>выберите нужный день в календаре</span></figcaption>
           </figure>
           <figure class="screen-proof">
-            <img src="assets/ui-chronicle-story.webp" loading="lazy" decoding="async" alt="Фрагмент летописи выбранного дня как оформленный рассказ о жизни">
-            <figcaption><strong>День становится главой</strong><span>события, главное и живая фраза</span></figcaption>
+            <div class="demo-panel demo-story"><div class="demo-heading"><span class="demo-symbol symbol-story" aria-hidden="true"></span><span>Страница вашей жизни</span><span class="demo-example-tag">Пример</span></div><div class="demo-body"><span class="demo-overline">15 сентября · Вторник</span><h4>Вечер с близкими</h4><p class="demo-story-text">После работы заехали к друзьям. Сначала говорили о планах на осень, потом достали старые фотографии и неожиданно засиделись допоздна. Запомнился не повод, а ощущение, что все наконец рядом.</p><blockquote class="demo-memory-quote">«Давай чаще собираться<br>просто так».</blockquote></div><div class="demo-footer"><span class="demo-pill">Люди</span><span class="demo-pill">События</span><span class="demo-pill">Живые фразы</span></div></div>
+            <figcaption><strong>Перечитать историю</strong><span>события дня и живые фразы близких</span></figcaption>
           </figure>
         </div>
         <p class="life-note">Стиль тоже выбираете вы: короткий дневник, строгие мемуары, ироничная проза или собственная манера рассказа.</p>
       </article>
     </section>
 
-    <section class="day section-pad" id="day">
+    <section class="day section-pad" id="day" hidden>
       <div class="section-heading reveal">
-        <p class="section-kicker">Один день с Помнит</p>
+        <p class="section-kicker">Один день с <span class="product-name">Помнит</span></p>
         <h2>Помогает до разговора,<br>во время и после.</h2>
       </div>
       <div class="day-track">
         <article class="day-card reveal">
           <div class="time">08:30</div>
           <h3>Утром</h3>
-          <p>Показывает дела на сегодня и напоминает, чьё обещание пора проверить.</p>
+          <p>Что сделать сегодня и о чём пора напомнить другим.</p>
           <figure class="day-shot">
-            <img src="assets/ui-tasks-today.webp" loading="lazy" decoding="async" alt="Три ближайших дела Помнит с напоминаниями на сегодня">
+            <div class="demo-panel demo-tasks"><div class="demo-heading"><span class="demo-symbol symbol-tasks" aria-hidden="true"></span><span>Ближайшие дела</span><span class="demo-example-tag">Пример</span></div><div class="demo-body"><h4>Сегодня</h4><div class="demo-task-list"><div class="demo-task"><span class="demo-checkbox" aria-hidden="true"></span><div><strong>Позвонить Андрею</strong><span>До 11:00</span></div></div><div class="demo-task"><span class="demo-checkbox" aria-hidden="true"></span><div><strong>Отправить смету</strong><span>До 14:00</span></div></div><div class="demo-task"><span class="demo-checkbox" aria-hidden="true"></span><div><strong>Уточнить срок поставки</strong><span>Ждёте ответ</span></div></div></div></div><div class="demo-footer"><span class="demo-source"><i aria-hidden="true"></i>Обещания из разговоров</span></div></div>
           </figure>
         </article>
         <article class="day-card reveal" data-delay="1">
           <div class="time">13:15</div>
           <h3>После встречи</h3>
-          <p>Собирает решения, суммы, сроки и следующие шаги сразу после встречи.</p>
+          <p>Что решили, кто за что отвечает и к какому сроку.</p>
           <figure class="day-shot">
-            <img src="assets/ui-feed-summary.webp" loading="lazy" decoding="async" alt="Карточка Помнит с готовым итогом встречи">
+            <div class="demo-panel demo-summary"><div class="demo-heading"><span class="demo-symbol symbol-summary" aria-hidden="true"></span><span>Итог встречи</span><span class="demo-example-tag">Пример</span></div><div class="demo-body"><span class="demo-overline">13:15 · Рабочая встреча</span><h4>Встреча по запуску кулона</h4><div class="demo-summary-item"><span>Обсудили</span><p>Финальный корпус и план тестирования.</p></div><div class="demo-summary-item"><span>Решили</span><p>Собрать первую партию к пятнице.</p></div></div><div class="demo-footer"><span class="demo-pill">1 решение</span><span class="demo-pill">К пятнице</span></div></div>
           </figure>
         </article>
         <article class="day-card reveal" data-delay="2">
           <div class="time">17:40</div>
           <h3>Перед звонком</h3>
-          <p>Возвращает прошлые договорённости и открытые вопросы перед новым звонком.</p>
+          <p>О чём договорились раньше и что осталось обсудить.</p>
           <figure class="day-shot">
-            <img src="assets/ui-chat-context.webp" loading="lazy" decoding="async" alt="Ответ Помнит с контекстом прошлого разговора">
+            <div class="demo-panel demo-chat"><div class="demo-heading"><span class="demo-symbol symbol-chat" aria-hidden="true"></span><span>Ответ по вашей памяти</span><span class="demo-example-tag">Пример</span></div><div class="demo-body demo-conversation"><div class="demo-message demo-question"><span class="demo-speaker">Вы</span><p>Что важно знать перед разговором с Андреем?</p></div><div class="demo-message demo-answer"><span class="demo-speaker product-name">Помнит</span><p>Вы договорились проверить крепление ремешка. Андрей ждёт фотографии корпуса <strong>до 16:00.</strong></p></div></div><div class="demo-footer"><span class="demo-source"><i aria-hidden="true"></i>Из прошлого разговора</span></div></div>
           </figure>
         </article>
         <article class="day-card reveal" data-delay="3">
           <div class="time">22:10</div>
           <h3>Вечером</h3>
-          <p>Собирает прожитый день в короткую историю, которую хочется сохранить.</p>
+          <p>Каким был этот день и какие слова хочется сохранить.</p>
           <figure class="day-shot">
-            <img src="assets/ui-chronicle-story.webp" loading="lazy" decoding="async" alt="Фрагмент вечерней летописи дня в Помнит">
+            <div class="demo-panel demo-story"><div class="demo-heading"><span class="demo-symbol symbol-story" aria-hidden="true"></span><span>Страница вашей жизни</span><span class="demo-example-tag">Пример</span></div><div class="demo-body"><span class="demo-overline">15 сентября · Вторник</span><h4>Вечер с близкими</h4><p class="demo-story-text">Долго гуляли, обсуждали планы и никуда не спешили. Обычный вечер, который хочется запомнить.</p><blockquote class="demo-memory-quote">«Давай чаще собираться<br>просто так».</blockquote></div><div class="demo-footer"><span class="demo-pill">Люди</span><span class="demo-pill">События</span><span class="demo-pill">Живые фразы</span></div></div>
           </figure>
         </article>
       </div>
     </section>
 
-    <section class="audience section-pad">
+    <section class="audience section-pad" hidden>
       <div class="audience-copy reveal">
         <p class="section-kicker">Для кого</p>
         <h2>Для тех, у кого многое решается в разговоре.</h2>
@@ -221,11 +235,11 @@
       <div class="quote-card reveal" data-delay="1">
         <span class="quote-mark">“</span>
         <blockquote>Я обещал ему скидку или нет?</blockquote>
-        <p>Помнит покажет точную фразу и дату разговора. Не нужно искать по заметкам и надеяться на память.</p>
+        <p><span class="product-name">Помнит</span> покажет точную фразу и дату разговора. Не нужно искать по заметкам и надеяться на память.</p>
       </div>
     </section>
 
-    <section class="how section-pad" id="how">
+    <section class="how section-pad" id="how" hidden>
       <div class="section-heading reveal">
         <p class="section-kicker">Как это работает</p>
         <h2>Из разговора —<br>в понятный результат.</h2>
@@ -240,7 +254,7 @@
         <article class="flow-step reveal" data-delay="1" role="listitem">
           <span class="flow-index">2</span>
           <h3>Получаете итог</h3>
-          <p>Помнит делает короткий конспект и список дел.</p>
+          <p><span class="product-name">Помнит</span> делает короткий конспект и список дел.</p>
         </article>
         <div class="flow-arrow" aria-hidden="true">→</div>
         <article class="flow-step reveal" data-delay="2" role="listitem">
@@ -258,70 +272,227 @@
       <p class="privacy-note reveal"><span aria-hidden="true">⌁</span> Для ответа используются только относящиеся к вопросу разговоры — не весь личный архив.</p>
     </section>
 
-    <section class="app-showcase section-pad">
-      <div class="app-copy reveal">
-        <p class="section-kicker">Приложение</p>
-        <h2>Всё важное<br>в одном месте.</h2>
-        <ul class="feature-list">
-          <li><span>Лента</span><p>Короткие итоги всех разговоров по порядку.</p></li>
-          <li><span>Дела</span><p>Ваши обещания, чужие обещания и ближайшие сроки.</p></li>
-          <li><span>Чат</span><p>Любой вопрос к своей памяти обычными словами.</p></li>
-          <li><span>Летопись</span><p>Дни вашей жизни как история, которую можно читать и слушать.</p></li>
-        </ul>
-      </div>
-      <div class="app-screen-wall reveal" data-delay="1" aria-label="Четыре примера работы Помнит">
-        <figure><img src="assets/ui-feed-summary.webp" loading="lazy" decoding="async" alt="Короткий итог разговора"><figcaption>Лента</figcaption></figure>
-        <figure><img src="assets/ui-tasks-today.webp" loading="lazy" decoding="async" alt="Ближайшие дела и напоминания"><figcaption>Дела</figcaption></figure>
-        <figure><img src="assets/ui-chat-context.webp" loading="lazy" decoding="async" alt="Ответ по контексту прошлого разговора"><figcaption>Чат</figcaption></figure>
-        <figure><img src="assets/ui-calendar.webp" loading="lazy" decoding="async" alt="Календарь личной летописи"><figcaption>Летопись</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="pendant section-pad" id="pendant">
-      <div class="pendant-visual reveal">
-        <img src="assets/pomnit-product.webp" alt="Кулон Помнит: тёмное дерево и матовый алюминий">
-      </div>
-      <div class="pendant-copy reveal" data-delay="1">
-        <p class="section-kicker">Кулон</p>
-        <h2>Чтобы не доставать<br>телефон.</h2>
-        <p class="large-copy">Небольшой кулон записывает разговоры в течение дня. Вы занимаетесь своими делами, а важные слова не теряются.</p>
-        <div class="material-row">
-          <div><span class="swatch wood"></span><strong>Натуральное дерево</strong><small>уникальный рисунок каждого корпуса</small></div>
-          <div><span class="swatch metal"></span><strong>Матовый алюминий</strong><small>прочность без визуального шума</small></div>
-        </div>
-        <p class="pendant-note">Можно пользоваться только приложением. Кулон нужен тем, кто хочет сохранять больше разговоров без постоянного участия телефона.</p>
-      </div>
-    </section>
-
-    <section class="product-world section-pad" aria-labelledby="product-world-title">
+    <section class="interactive-app section-pad" aria-labelledby="app-demo-title" data-app-demo>
       <div class="section-heading reveal">
-        <p class="section-kicker">Образ продукта</p>
-        <div>
-          <h2 id="product-world-title">Не электроника на шее.<br>Личная вещь.</h2>
-          <p class="section-intro">Выберите ремешок, породу дерева и гравировку — чтобы кулон выглядел как ваша вещь, а не безликий гаджет.</p>
+        <p class="section-kicker">Попробуйте сами</p>
+        <div><h2 id="app-demo-title">Главное —<br>уже под рукой.</h2><p class="section-intro">Лента, дела, разговор с памятью и летопись. Выберите раздел прямо в телефоне.</p></div>
+      </div>
+      <div class="app-tour reveal" id="app-demo">
+        <div class="phone-stage">
+          <div class="phone-shell">
+            <div class="phone-status" aria-hidden="true">
+              <span class="phone-status-time">15:41</span>
+              <i class="phone-island"></i>
+              <svg class="phone-status-icons" viewBox="0 0 70 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g fill="currentColor"><rect y="11" width="3" height="5" rx="1"/><rect x="4.5" y="8" width="3" height="8" rx="1"/><rect x="9" y="5" width="3" height="11" rx="1"/><rect x="13.5" y="2" width="3" height="14" rx="1"/></g>
+                <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 6.5c4.8-4.4 11.2-4.4 16 0"/><path d="M24 9.5c3-2.6 7-2.6 10 0"/><path d="M27 12.4c1.2-1 2.8-1 4 0"/></g>
+                <circle cx="29" cy="14.2" r="1" fill="currentColor"/>
+                <rect x="45.5" y="2" width="21" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="47.8" y="4.2" width="14.5" height="7.6" rx="1.3" fill="currentColor"/>
+                <path d="M68.5 6v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="phone-viewport">
+              <div class="phone-screen" id="phone-feed" role="tabpanel" aria-labelledby="tab-feed" tabindex="0">
+                <div class="phone-screen-title"><h3>Лента</h3><span class="phone-search">⌕ &nbsp;Поиск</span><span class="phone-settings" aria-hidden="true">⚙</span></div>
+                <div class="phone-device-card"><img class="phone-pendant-thumb" src="assets/pomnit-product-v4.webp" alt=""><span><strong>Кулон подключён</strong><small>Заряд 82%</small></span><b aria-hidden="true">›</b></div>
+                <div class="phone-transcript-card"><img src="assets/pomnit-icon-transparent.png" alt=""><strong>Расшифровка разговора</strong><b aria-hidden="true">›</b></div>
+                <p class="phone-date">15 сентября</p>
+                <article class="phone-glass phone-meeting">
+                  <div class="phone-card-meta"><time>13:15</time></div>
+                  <h4>Встреча с Мариной · «Север»</h4>
+                  <p>Обсудили осенний запуск, бюджет и сроки.</p>
+                  <button class="phone-text-button" type="button" aria-expanded="false" aria-controls="meeting-detail" data-detail-toggle>Посмотреть итог <span aria-hidden="true">↗</span></button>
+                </article>
+                <article class="phone-glass phone-note">
+                  <div class="phone-card-meta"><time>10:20</time></div>
+                  <h4>Созвон с Олегом из «Атласа»</h4>
+                  <p>Уточнили, что изменить в смете и графике запуска.</p>
+                  <button class="phone-text-button" type="button" aria-expanded="false" aria-controls="call-detail" data-detail-toggle>Посмотреть итог <span aria-hidden="true">↗</span></button>
+                </article>
+              </div>
+              <section class="phone-detail-view" id="meeting-detail" aria-label="Подробный итог встречи с Мариной" tabindex="-1" hidden>
+                <button class="phone-detail-back" type="button" data-detail-back aria-label="Вернуться в ленту"><span aria-hidden="true">←</span> Лента</button>
+                <p class="phone-detail-kicker">«Север» · 15 сентября, 13:15</p>
+                <h3>Встреча с Мариной</h3>
+                <p class="phone-detail-intro">Марина выбирает формат осеннего запуска. Ей нужно сравнить два варианта по цене, этапам и дате первого результата.</p>
+                <div class="phone-detail-section"><h4>Главное</h4><p>Марине важно уложиться в бюджет и заранее знать, кто будет вести проект. Она вернётся с решением после получения предложения.</p></div>
+                <div class="phone-detail-section"><h4>Решили</h4><ul><li>Подготовить базовый и расширенный варианты с ценой и сроками.</li><li>После отправки предложения созвониться и выбрать формат работы.</li></ul></div>
+                <div class="phone-detail-section"><h4>Кто что обещал</h4><p><strong>Вы:</strong> после встречи отправить итог, а до пятницы, 18 сентября, — оба варианта предложения.</p><p><strong>Марина:</strong> до четверга, 17 сентября, прислать список задач и примеры.</p></div>
+                <div class="phone-detail-section"><h4>Следующий шаг</h4><p>Получить материалы от Марины, уточнить объём работы и подготовить предложение.</p></div>
+              </section>
+              <section class="phone-detail-view" id="call-detail" aria-label="Подробный итог созвона с Олегом" tabindex="-1" hidden>
+                <button class="phone-detail-back" type="button" data-detail-back aria-label="Вернуться в ленту"><span aria-hidden="true">←</span> Лента</button>
+                <p class="phone-detail-kicker">«Атлас» · 15 сентября, 10:20</p>
+                <h3>Созвон с Олегом</h3>
+                <p class="phone-detail-intro">Олег ведёт проект со стороны клиента «Атлас». Созвонились, чтобы уточнить бюджет и дату запуска после изменения объёма работ.</p>
+                <div class="phone-detail-section"><h4>Главное</h4><p>Олегу нужны обновлённая смета и график, чтобы согласовать следующий этап с командой.</p></div>
+                <div class="phone-detail-section"><h4>Решили</h4><ul><li>Обновить смету и график запуска до среды, 16 сентября.</li><li>После внутреннего обсуждения Олег вернётся с ответом в пятницу, 18 сентября.</li></ul></div>
+                <div class="phone-detail-section"><h4>Кто что обещал</h4><p><strong>Вы:</strong> отправить Олегу обновлённые документы до среды.</p><p><strong>Олег:</strong> сверить их с командой и сообщить решение в пятницу.</p></div>
+                <div class="phone-detail-section"><h4>Следующий шаг</h4><p>Отправить смету и график Олегу, затем дождаться ответа его команды.</p></div>
+              </section>
+              <div class="phone-screen" id="phone-tasks" role="tabpanel" aria-labelledby="tab-tasks" tabindex="0" hidden>
+                <div class="phone-screen-title"><h3>Дела</h3><span class="phone-settings" aria-hidden="true">⚙</span></div>
+                <p class="phone-subtitle" data-task-count aria-live="polite">3 дела из разговоров</p>
+                <div class="phone-glass phone-checklist">
+                  <label class="phone-task"><input type="checkbox" data-demo-task><span><strong>Отправить Марине итог встречи</strong><small>15 сентября · «Север»</small></span></label>
+                  <label class="phone-task"><input type="checkbox" data-demo-task><span><strong>Подготовить два варианта предложения</strong><small>До пятницы · «Север»</small></span></label>
+                  <label class="phone-task"><input type="checkbox" data-demo-task><span><strong>Обновить смету и график для Олега</strong><small>До среды · «Атлас»</small></span></label>
+                </div>
+              </div>
+              <div class="phone-screen phone-chat-screen" id="phone-chat" role="tabpanel" aria-labelledby="tab-chat" tabindex="0" hidden>
+                <div class="phone-screen-title"><h3>Чат</h3><span class="phone-settings" aria-hidden="true">⚙</span></div>
+                <div class="phone-chat-center">
+                  <img src="assets/pomnit-icon-transparent.png" alt="">
+                  <h4>Спросите о важном</h4>
+                  <p>Ответ найдётся в вашей памяти.</p>
+                  <div class="phone-chat-input" role="group" aria-label="Пример поля для вопроса">Задайте вопрос <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m0 0-5 5m5-5 5 5"></path></svg></span></div>
+                  <div class="phone-prompts" role="group" aria-label="Примеры вопросов">
+                    <button type="button" data-question="promises" aria-pressed="false">Что я обещал Марине из «Севера»?</button>
+                    <button type="button" data-question="meeting" aria-pressed="false">О чём договорились с Олегом из «Атласа»?</button>
+                  </div>
+                </div>
+                <div class="phone-chat-thread" aria-live="polite" aria-atomic="true" hidden>
+                  <div class="phone-bubble phone-bubble-user"><span>Вы</span><p data-chat-question></p></div>
+                  <div class="phone-bubble phone-bubble-answer"><span class="product-name">Помнит</span><p data-chat-answer></p><small data-chat-source></small></div>
+                </div>
+              </div>
+              <div class="phone-screen" id="phone-story" role="tabpanel" aria-labelledby="tab-story" tabindex="0" hidden>
+                <div class="phone-screen-title"><h3>Летопись</h3><span class="phone-settings" aria-hidden="true">⚙</span></div>
+                <p class="phone-month">‹ <strong>сентябрь 2026 г.</strong> ›</p>
+                <div class="phone-date-picker" role="group" aria-label="Дни с историями">
+                  <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                  <span class="phone-date-empty"></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+                  <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><button type="button" data-story-date="12" aria-pressed="false" aria-label="12 сентября">12<i></i></button><span>13</span>
+                  <span>14</span><button type="button" data-story-date="15" aria-pressed="true" aria-label="15 сентября">15<i></i></button><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+                  <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
+                  <span>28</span><span>29</span><span>30</span>
+                </div>
+                <article class="phone-glass phone-story-page" aria-live="polite" aria-atomic="true">
+                  <span class="phone-card-meta" data-story-label>15 сентября · Вторник</span>
+                  <h4 data-story-title>Шарлотка и старые фотографии</h4>
+                  <div class="phone-story-text" data-story-text><p>После работы вы заехали к сестре Лене всего на полчаса. На кухне пахло шарлоткой, а племянник упорно запускал самолёт из тетрадного листа — тот каждый раз падал под стол.</p><p>Пока заваривался чай, Лена достала коробку старых фотографий. На одной вы оба стоите у моря в одинаковых красных кепках. Посмеялись и решили в субботу наконец выбраться к реке.</p><p>Уже в метро Лена прислала фото и короткое сообщение: «В субботу без отговорок». Вы ответили: «Договорились» — и до самой станции разглядывали старый снимок.</p></div>
+                  <blockquote data-story-quote>«В субботу без отговорок».</blockquote>
+                </article>
+              </div>
+            </div>
+            <div class="phone-tabs" role="tablist" aria-label="Разделы приложения">
+              <button id="tab-feed" type="button" role="tab" aria-selected="true" aria-controls="phone-feed" data-app-tab="feed"><img class="phone-tab-logo" src="assets/pomnit-icon-transparent.png" alt="">Лента</button>
+              <button id="tab-tasks" type="button" role="tab" aria-selected="false" aria-controls="phone-tasks" tabindex="-1" data-app-tab="tasks"><svg class="phone-tab-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="12"></circle><path d="m9.5 16.5 4.5 4.5 8.5-9"></path></svg>Дела</button>
+              <button id="tab-chat" type="button" role="tab" aria-selected="false" aria-controls="phone-chat" tabindex="-1" data-app-tab="chat"><svg class="phone-tab-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6h22v18H12l-7 5V6Z"></path></svg>Чат</button>
+              <button id="tab-story" type="button" role="tab" aria-selected="false" aria-controls="phone-story" tabindex="-1" data-app-tab="story"><svg class="phone-tab-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8c-4-3-8-3-13-2v19c5-1 9-1 13 2 4-3 8-3 13-2V6c-5-1-9-1-13 2v19"></path><path d="M16 8v19"></path></svg>Летопись</button>
+            </div>
+            <div class="phone-home" aria-hidden="true"></div>
+          </div>
+          <span class="phone-demo-label">Интерактивный пример интерфейса</span>
+        </div>
+        <div class="tour-copy">
+          <div class="tour-descriptions" aria-live="polite" aria-atomic="true">
+            <div data-app-description="feed">
+              <p class="tour-eyebrow">01 / Лента разговоров</p>
+              <h3>Встреча закончилась.<br>Главное уже собрано.</h3>
+              <p class="tour-lead">Лента собирает разговоры по дням. Откройте встречу с Мариной — увидите суть, решения, обещания и следующий шаг.</p>
+              <div class="tour-takeaway"><span>Для работы</span><p>Сотрудник помнит договорённости, а команда сохраняет историю клиентов и проектов.</p></div>
+              <p class="tour-hint"><span aria-hidden="true">↖</span> Откройте «Посмотреть итог» в карточке встречи.</p>
+            </div>
+            <div data-app-description="tasks" hidden>
+              <p class="tour-eyebrow">02 / Дела и обещания</p>
+              <h3>Обещали в разговоре.<br>Вспомнили вовремя.</h3>
+              <p class="tour-lead">Ваши обещания и то, что обещали вам, собираются в понятный список — со сроком и контекстом.</p>
+              <div class="tour-takeaway"><span>Для работы</span><p>Договорённости из встреч становятся делами. Их можно передавать в рабочие системы компании.</p></div>
+              <p class="tour-hint"><span aria-hidden="true">↖</span> Отметьте любое дело выполненным.</p>
+            </div>
+            <div data-app-description="chat" hidden>
+              <p class="tour-eyebrow">03 / Вопрос к памяти</p>
+              <h3>Не искать запись.<br>Просто спросить.</h3>
+              <p class="tour-lead">Перед следующим разговором <span class="product-name">Помнит</span> возвращает нужный контекст: кому вы что обещали и о чём договорились.</p>
+              <div class="tour-takeaway"><span>Перед разговором</span><p>Спросите про Марину или Олега — ответ назовёт договорённость и срок.</p></div>
+              <p class="tour-hint"><span aria-hidden="true">↖</span> Выберите пример вопроса под полем ввода.</p>
+            </div>
+            <div data-app-description="story" hidden>
+              <p class="tour-eyebrow">04 / Личная летопись</p>
+              <h3>Дни проходят.<br>Истории остаются.</h3>
+              <p class="tour-lead">В конце дня события и живые фразы складываются в небольшой рассказ, к которому можно вернуться по дате.</p>
+              <div class="tour-takeaway"><span>Для жизни</span><p>Прочитайте страницу дня или послушайте её как главу аудиокниги жизни.</p></div>
+              <p class="tour-hint"><span aria-hidden="true">↖</span> Нажмите на 12 или 15 сентября — история изменится.</p>
+            </div>
+          </div>
+          <div class="tour-controls">
+            <button type="button" class="tour-arrow" data-tour-prev aria-label="Предыдущий экран">←</button>
+            <span class="tour-progress" data-tour-progress>01 / 04</span>
+            <button type="button" class="tour-arrow" data-tour-next aria-label="Следующий экран">→</button>
+            <button type="button" class="tour-reset" data-tour-reset>Начать заново</button>
+          </div>
         </div>
       </div>
-      <div class="product-gallery">
-        <figure class="gallery-card gallery-worn reveal">
-          <img src="assets/pomnit-worn-v1.webp" alt="Кулон Помнит на тонком графитовом шнуре поверх светлого трикотажа">
-          <figcaption><strong>Каждый день</strong><span>лёгкий текстильный шнур</span></figcaption>
-        </figure>
-        <figure class="gallery-card reveal" data-delay="1">
-          <img src="assets/pomnit-straps-v1.webp" alt="Кулон Помнит и варианты ремешков из кожи и плетёного текстиля">
-          <figcaption><strong>Разные способы носить</strong><span>кожа и плетёный текстиль</span></figcaption>
-        </figure>
-        <figure class="gallery-card reveal" data-delay="2">
-          <img src="assets/pomnit-covers-v1.webp" alt="Кулон Помнит со сменными деревянными крышками и гравировкой фирменной волны">
-          <figcaption><strong>Сменные крышки</strong><span>дерево и персональная гравировка</span></figcaption>
-        </figure>
-      </div>
-      <p class="concept-caption reveal">Один помощник внутри — разный внешний вид для каждого владельца.</p>
     </section>
 
-    <section class="personal section-pad" id="personal">
+    <section class="product-world section-pad" id="pendant" aria-labelledby="product-world-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Кулон</p>
+        <div>
+          <h2 id="product-world-title">Вещь, которую<br>хочется носить.</h2>
+          <p class="section-intro">Небольшой кулон помогает сохранить важное, пока вы живёте своим днём. Попробуйте разные сочетания под настроение.</p>
+        </div>
+      </div>
+      <div class="configurator reveal" data-configurator>
+        <figure class="config-preview">
+          <div class="config-photo" role="img" aria-label="Примерка кулона: голубая крышка и чёрный текстильный шнур" data-config-photo>
+            <img src="assets/configurator/cord-black.webp" width="1122" height="1402" alt="" data-config-cord>
+            <svg class="config-cover-layer" viewBox="0 0 1122 1402" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <defs>
+                <filter id="config-face-soft-edge" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="1.2" /></filter>
+                <mask id="config-face-mask" maskUnits="userSpaceOnUse" x="462" y="704" width="190" height="272">
+                  <path fill="white" filter="url(#config-face-soft-edge)" d="M513 710 C486 710 469 729 468 755 L468 921 C468 949 487 968 513 968 L599 968 C626 968 644 949 644 921 L644 755 C644 729 626 710 599 710 Z" />
+                </mask>
+              </defs>
+              <image href="assets/configurator/base-aqua.webp" width="1122" height="1402" mask="url(#config-face-mask)" data-config-cover></image>
+            </svg>
+          </div>
+        </figure>
+        <div class="config-controls">
+          <p class="config-overline">Соберите свой вариант</p>
+          <h3>Каким будет<br> ваш кулон?</h3>
+          <fieldset class="config-group">
+            <legend>Крышка <span data-config-cover-name>Голубой</span></legend>
+            <p class="config-category-title">Дерево</p>
+            <div class="config-options config-options-cover" aria-label="Деревянные крышки">
+              <button type="button" class="config-option" data-config-cover-option="dark" aria-pressed="false"><span class="config-sample cover-dark"></span><span>Тёмное</span></button>
+              <button type="button" class="config-option" data-config-cover-option="medium" aria-pressed="false"><span class="config-sample cover-medium"></span><span>Тёплое</span></button>
+              <button type="button" class="config-option" data-config-cover-option="light" aria-pressed="false"><span class="config-sample cover-light"></span><span>Светлое</span></button>
+            </div>
+            <p class="config-category-title">Пластик</p>
+            <div class="config-options config-options-cover config-options-plastic" aria-label="Пластиковые крышки">
+              <button type="button" class="config-option" data-config-cover-option="aqua" aria-pressed="true"><span class="config-sample cover-aqua"></span><span>Голубой</span></button>
+              <button type="button" class="config-option" data-config-cover-option="lilac" aria-pressed="false"><span class="config-sample cover-lilac"></span><span>Сиреневый</span></button>
+              <button type="button" class="config-option" data-config-cover-option="mint" aria-pressed="false"><span class="config-sample cover-mint"></span><span>Мятный</span></button>
+              <button type="button" class="config-option" data-config-cover-option="peach" aria-pressed="false"><span class="config-sample cover-peach"></span><span>Персиковый</span></button>
+              <button type="button" class="config-option" data-config-cover-option="rose" aria-pressed="false"><span class="config-sample cover-rose"></span><span>Розовый</span></button>
+            </div>
+          </fieldset>
+          <fieldset class="config-group">
+            <legend>Шнурок <span data-config-cord-name>Чёрный текстиль</span></legend>
+            <div class="config-options config-options-cord">
+              <button type="button" class="config-option" data-config-cord-option="black" aria-pressed="true"><span class="config-sample cord-black"></span><span>Чёрный текстиль</span></button>
+              <button type="button" class="config-option" data-config-cord-option="graphite" aria-pressed="false"><span class="config-sample cord-graphite"></span><span>Графитовый</span></button>
+              <button type="button" class="config-option" data-config-cord-option="cognac" aria-pressed="false"><span class="config-sample cord-cognac"></span><span>Рыжая кожа</span></button>
+              <button type="button" class="config-option" data-config-cord-option="braided" aria-pressed="false"><span class="config-sample cord-braided"></span><span>Плетёная кожа</span></button>
+              <button type="button" class="config-option" data-config-cord-option="chocolate" aria-pressed="false"><span class="config-sample cord-chocolate"></span><span>Плоская кожа</span></button>
+              <button type="button" class="config-option" data-config-cord-option="aqua" aria-pressed="false"><span class="config-sample cord-aqua"></span><span>Голубой</span></button>
+              <button type="button" class="config-option" data-config-cord-option="lilac" aria-pressed="false"><span class="config-sample cord-lilac"></span><span>Сиреневый</span></button>
+              <button type="button" class="config-option" data-config-cord-option="mint" aria-pressed="false"><span class="config-sample cord-mint"></span><span>Мятный</span></button>
+              <button type="button" class="config-option" data-config-cord-option="peach" aria-pressed="false"><span class="config-sample cord-peach"></span><span>Персиковый</span></button>
+              <button type="button" class="config-option" data-config-cord-option="rose" aria-pressed="false"><span class="config-sample cord-rose"></span><span>Розовый</span></button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <section class="personal section-pad" id="personal" hidden>
       <div class="section-heading reveal">
         <p class="section-kicker">Настраивается под вас</p>
-        <h2>Вы решаете,<br>как Помнит помогает.</h2>
+        <h2>Вы решаете,<br>как <span class="product-name">Помнит</span> помогает.</h2>
       </div>
       <div class="personal-grid">
         <article class="personal-card reveal">
@@ -342,12 +513,12 @@
         <article class="personal-card reveal" data-delay="3">
           <span class="card-label">Личные данные</span>
           <h3>Решайте, что хранить</h3>
-          <p>Настройте срок хранения и то, какую информацию Помнит может использовать.</p>
+          <p>Настройте срок хранения и то, какую информацию <span class="product-name">Помнит</span> может использовать.</p>
         </article>
       </div>
     </section>
 
-    <section class="trust section-pad" id="trust">
+    <section class="trust section-pad" id="trust" hidden>
       <div class="trust-card reveal">
         <div>
           <p class="section-kicker">Главный принцип</p>
@@ -355,13 +526,13 @@
         </div>
         <div class="trust-list">
           <p><strong>Не весь архив сразу.</strong> Для ответа берутся только нужные разговоры.</p>
-          <p><strong>Ответ можно проверить.</strong> Помнит показывает исходный разговор и дату.</p>
+          <p><strong>Ответ можно проверить.</strong> <span class="product-name">Помнит</span> показывает исходный разговор и дату.</p>
           <p><strong>Вы управляете памятью.</strong> Сами выбираете, что хранить и когда удалять.</p>
         </div>
       </div>
     </section>
 
-    <section class="final-cta section-pad reveal">
+    <section class="final-cta section-pad reveal" hidden>
       <img src="assets/pomnit-icon-transparent.png" alt="" aria-hidden="true">
       <p class="section-kicker">Помнит</p>
       <h2>Меньше держать в голове.<br><span>Больше быть в разговоре.</span></h2>
@@ -371,10 +542,10 @@
 
   <footer>
     <img src="assets/pomnit-logo-transparent.png" alt="Помнит">
-    <p>Голосовой помощник, который помнит ваши разговоры.</p>
+    <p>Помнит вашу жизнь. Напоминает главное.</p>
     <p>© <span data-year></span></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260916-13"></script>
 </body>
 </html>
